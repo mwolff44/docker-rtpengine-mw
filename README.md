@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mwolff44/rtpengine-docker-mw.svg?branch=master)](https://travis-ci.org/mwolff44/rtpengine-docker-mw)
+
 # docker-rtpengine
 
 A Docker container for running rtpengine. It is largely based on the projects listed in the references.
