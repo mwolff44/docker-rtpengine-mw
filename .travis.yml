@@ -1,0 +1,15 @@
+sudo: required
+dist: trusty
+language: python
+services:
+- docker
+env:
+  global:
+  - IMAGE_NAME=docker-rtpengine
+  - COMMIT=${TRAVIS_COMMIT::7}
+  - MAJ_VERSION="1.0"
+install: true
+script:
+- docker build -t mwolff44/$IMAGE_NAME:$MAJ_VERSION.$TRAVIS_BUILD_NUMBER-$COMMIT
+  .
+- docker images
