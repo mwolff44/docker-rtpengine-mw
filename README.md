@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/mwolff44/rtpengine-docker-mw.svg?branch=master)](https://travis-ci.org/mwolff44/rtpengine-docker-mw)
+[![Build Status](https://travis-ci.org/mwolff44/docker-rtpengine-mw.svg?branch=master)](https://travis-ci.org/mwolff44/docker-rtpengine-mw)
 
 # docker-rtpengine
 
