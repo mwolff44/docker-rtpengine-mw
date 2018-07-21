@@ -1,7 +1,7 @@
 # This requires docker-compose 1.6.0 or later
 version: '2'
 services:
-  rtpengine:
+  rtpengine-stretch-mw:
     privileged: true
     build:
       context: .
@@ -21,7 +21,7 @@ services:
       FORK: "no"
       # TOS: 184
       TABLE: 40
-      NO_FALLBACK: "yes"
+      NO_FALLBACK: "no"
       PORT_MIN: 10000
       PORT_MAX: 19999
       # REDIS: 127.0.0.1:6379

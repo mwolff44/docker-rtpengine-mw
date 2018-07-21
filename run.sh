@@ -57,8 +57,7 @@ if [ -z "$INTERFACES" ]; then
   #export PRIVATE_IPV4="$(curl --fail -qs http://169.254.169.254/2014-11-05/meta-data/local-ipv4)"   
   #export PUBLIC_IPV4="$(curl --fail -qs http://169.254.169.254/2014-11-05/meta-data/public-ipv4)"
 
-  export PRIVATE_IPV4="${PRIVATE_IPV4:-$(ip addr show eth0 | grep 'inet ' | awk '{print $2}' | cut -d/ -f1)}"
-    [ -n "$PUBLIC_IPV4" ] || \
+  export PRIVATE_IPV4="$(hostname -I | awk '{print $1}')" 
   PUBLIC_IPV4="$(curl --fail -qs whatismyip.akamai.com)"
   export PUBLIC_IPV4
 
