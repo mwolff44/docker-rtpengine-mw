@@ -39,7 +39,14 @@ RUN apt-get update && apt-get install -y \
        libcrypt-rijndael-perl \
        libdigest-hmac-perl \
        libio-socket-inet6-perl \
-       libsocket6-perl
+       libsocket6-perl \
+       gperf \
+       libcrypt-openssl-rsa-perl \
+       libdigest-crc-perl \
+       libio-multiplex-perl \
+       libnet-interface-perl \
+       libspandsp-dev \
+       libsystemd-dev
 # \
 #    && apt-get clean && rm -rf /var/lib/apt/lists
 
